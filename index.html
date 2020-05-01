@@ -1,6 +1,27 @@
 <!DOCTYPE HTML>
 <html>
-<head></head>
+<head>
+<style>
+.marquee {
+    width: 1920px;
+	line-height: 50px;
+	background-color: black;
+	color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.marquee p {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 100s linear infinite;
+}
+@keyframes marquee {
+    0%   { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
+}
+</style>	
+</head>
 <body>
 <div class="marquee">
 	<p>Simulation errors found: Player can fall off cliff with no damage. Player is able to fall into the thresher without damage. Thresher can be used on a tractor without damage. High speed vehicle collisions ragdoll unrealistically. Player is too stupid to be a real farmer.</p>
